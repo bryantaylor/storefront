@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	var init = function() {
 		// Define a function in case the main JS file has not loaded yet.
 		if (!window.onnetworkconnection) {
@@ -9,18 +9,25 @@ $(document).ready(function() {
 		
 		//window.onnetworkconnection();
 		
-		
-		$.ajax({
+		jQuery.ajax({
 			type: "GET",
 			url: "http://www.google.com",
 			success: function() {
 				window.onnetworkconnection();
 			},
 			error: function() {
-				$("body").append("<div id='offline'>You must be connected to the internet to access the store.</div>");
+				jQuery('#wrap').remove();
+				jQuery("body").append(
+					"<div id='offlineBG'>" +
+					"<div id='offline'>" +
+ 					"<img src='img/networkIcon.svg'>" +
+					"<h1>You must be connected to the internet to access the store.<h1>" +
+					"</div>" +
+					"</div>");
+				console.log('not goin down');
 			}
 		})
-		
+
 	}
 	
 	if (navigator.userAgent.toLowerCase().indexOf("ipad") == -1) // On desktop so call init() immediately. This will be the case for dev.
