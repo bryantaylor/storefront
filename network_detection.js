@@ -21,10 +21,10 @@ jQuery(document).ready(function() {
 					"<div id='offlineBG'>" +
 					"<div id='offline'>" +
  					"<img src='img/networkIcon.svg'>" +
-					"<h1>You must be connected to the internet to access the store.<h1>" +
+ 					"<h1>You must be connected to the internet to access the store.</h1>" +
 					"</div>" +
 					"</div>");
-				console.log('not goin down');
+				console.log('not connected to network')
 			}
 		})
 
