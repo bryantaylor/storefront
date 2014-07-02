@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
  					"<h1>You must be connected to the internet to access the store.</h1>" +
 					"</div>" +
 					"</div>");
-				console.log('not connected to network');
+				console.log('not connected to network')
 			}
 		})
 

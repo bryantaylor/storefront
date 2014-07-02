@@ -6,7 +6,7 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<!-- <script src="network_detection.js"></script> -->
-	<script src="basic_store.js"></script>
+	<!-- <script src="basic_store.js"></script> -->
 	<link rel="stylesheet" href="offline.css" type="text/css">
 	<!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,700" rel="stylesheet" type="text/css">
@@ -19,11 +19,15 @@
 			<img id="logo" src="img/logo.svg">
 		</div>
 	</div>
-	<!-- <div id="video-container"> -->
-		<!-- <video width="100%" height="auto" controls preload="auto"> -->
-			<!-- <source src="http://batescreativegroup.com/clients/store/video/BatesCreative.mp4" type="video/mp4"> -->
-		<!-- </video> -->
-	<!-- </div> -->
+	<div id="video-container">
+		<a id="close-container" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.9 14.9" enable-background="new 0 0 14.9 14.9"><path class="theX" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M13.9 1l-12.9 12.9M13.9 13.9l-12.9-12.9"/></svg></a>
+		<div class="video">
+			<iframe src="//player.vimeo.com/video/91424036?title=0&amp;byline=0&amp;portrait=0&amp;color=00b2bf" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<!-- <video width="100%" height="auto" controls preload="auto">
+			<source src="http://batescreativegroup.com/clients/store/video/BatesCreative.mp4" type="video/mp4">
+		</video> -->
+	</div>
 	<header id="page-header">
 		<p>The Official Magazine of The Bates Creative Group, LLC.</p>
 	</header>
@@ -35,7 +39,7 @@
 				<div class="featureDescription grey">
 					<h1>BATES CREATIVE</h1>
 					<h2>Bates Creative Imagine</h2>
-					<p>The launch of the Bates Creative app includes Imagine—a look back at the past decade in the design industry and how the past ten years 	have 	inspired our team, our work, and our love for design.</p>
+					<p>The launch of the Bates Creative app includes Imagine—a look back at the past decade in the design industry and how the past ten years 	have inspired our team, our work, and our love for design.</p>
 				</div>
 				<div class="readMore grey">
 					<p>To read more download <br>this edition in our library</p>
@@ -56,7 +60,8 @@
 					<p>Our team of strategists, designers and industry thought-leaders has an established reputation for excellence and design innovation that 	helps position and propel clients in their respected markets.</p>
 				</div>
 				<div class="readMore white push">
-					<p>To view our video <a href="http://batescreativegroup.com/clients/store/video/BatesCreative.mp4">Click Here</a></p>
+					<!-- <p>To view our video <a id="video-link" href="http://batescreativegroup.com/clients/store/video/BatesCreative.mp4">Click Here</a></p> -->
+					<p>To view our video <a id="video-link" href="#">Click Here</a></p>
 				</div>
 				<div class="socialW">
 					<a href="https://www.facebook.com/batescreativegroup"><span aria-hidden="true" class="icon-facebook"></span></a>
@@ -71,7 +76,7 @@
 				<img class="featureSlide" src="img/slide3.png" alt="">
 				<div class="featureDescription grey">
 					<h1>BATES CREATIVE</h1>
-					<h2>Bates Sales Overview </h2>
+					<h2>Bates Sales Overview</h2>
 					<p>The launch of the Bates Creative app includes Imagine—a look back at the past decade in the design industry and how the pasten years have inspired our team, our work, and our love for design.</p>
 				</div>
 				<div class="readMore grey">
