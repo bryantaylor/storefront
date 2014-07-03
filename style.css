@@ -20,7 +20,6 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
-	position: relative;
 }
 
 #preloader {
@@ -46,7 +45,8 @@ body {
 }
 
 #wrap {
-	position: relative;
+	width: 768px;
+	height: 1024px;
 }
 #page-header {
 	background: #7e7773;
@@ -333,21 +333,101 @@ Basic Swiper Styles
 }
 
 /* ===============================================================
-Pagination Styles
+Video Styles
 ================================================================*/
 
-#video-container {
+/* #video-container {
 	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
 	width: 768px;
 	background: #00b2bf;
 	z-index: 10000;
+	-webkit-transition: all 1s ease 1s;
+    -moz-transition: all 1s ease 1s;
+    -o-transition: all 1s ease 1s;
+    transition: all 1s ease 1s;
+} */
+
+
+#close-container {
+	width: 24px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 }
 
-#video {
-	background: #00b2bf;
+#close-container svg {
+	width: 24px;
+	height: 24px;
+}
+
+.theX {
+	stroke: #055A60;
+}
+
+.theX:hover {
+	stroke: #fff;
+	-webkit-transition: stroke .7s ease;
+    -moz-transition: stroke .7s ease;
+    -o-transition: stroke .7s ease;
+    transition: stroke .7s ease;
+}
+
+/* Overlay style */
+.video-container {
+	position: fixed;
+	width: 768px;
+	height: 1024px;
+	top: 0;
+	left: 0;
+	background: rgba(0, 178, 192, .98);
+	z-index: 1000;
+}
+
+/* Effects */
+.overlay-door {
+	visibility: hidden;
+	width: 0;
+	left: 384px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
+	transition: width 0.5s 0.3s, visibility 0s 0.8s;
+}
+
+.overlay-door.open {
+	visibility: visible;
+	width: 768px;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.overlay-door .video{
+	position: absolute;
+	top: 460px;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.overlay-door .video,
+.overlay-door .theX {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.overlay-door.open .video,
+.overlay-door.open .theX {
+	opacity: 1;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.overlay-door.close .video,
+.overlay-door.close .theX {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 /* ===============================================================
