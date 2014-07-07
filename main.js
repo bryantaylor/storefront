@@ -19,7 +19,6 @@ function preloader() {
 	jQuery(shadow).show();
 }
 
-<<<<<<< HEAD
 jQuery(window).load(function(){
 	slider();
 	preloader();
@@ -61,6 +60,7 @@ jQuery(window).load(function(){
 	jQuery(triggerBttn).click(function(e) {
 		e.preventDefault();
 		toggleOverlay();
+		jQuery('body').css('overflow','hidden');
 		console.log('Open');
 	});
 
@@ -69,34 +69,10 @@ jQuery(window).load(function(){
 		toggleOverlay();
 		vimeoWrap = jQuery('.video');
    		vimeoWrap.html( vimeoWrap.html());
+   		jQuery('body').removeAttr('style');
 		console.log('Close');
 	});
 
-	//triggerBttn.addEventListener( 'click', toggleOverlay );
-	//closeBttn.addEventListener( 'click', toggleOverlay );
 })();
 
-=======
-function videoPlayer() {
-	var container = document.getElementById('video-container');
-	jQuery('#video-link').click(function(e) {
-		e.preventDefault();
-		jQuery(container).show();
-		jQuery(container).addClass('expand');
-		console.log('Hi!');
-	});
-
-	jQuery('#close-container').click(function(e) {
-		e.preventDefault();
-		jQuery(container).hide();
-		console.log('Bye!!');
-	});
-
-}
-
-jQuery(window).load(function(){
-	slider();
-	preloader();
-	videoPlayer();
->>>>>>> e5d25cc901d6a0140a29d9a3eea110a6ae4cb72e
 });
