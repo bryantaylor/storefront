@@ -19,6 +19,7 @@ function preloader() {
 	jQuery(shadow).show();
 }
 
+<<<<<<< HEAD
 jQuery(window).load(function(){
 	slider();
 	preloader();
@@ -75,4 +76,27 @@ jQuery(window).load(function(){
 	//closeBttn.addEventListener( 'click', toggleOverlay );
 })();
 
+=======
+function videoPlayer() {
+	var container = document.getElementById('video-container');
+	jQuery('#video-link').click(function(e) {
+		e.preventDefault();
+		jQuery(container).show();
+		jQuery(container).addClass('expand');
+		console.log('Hi!');
+	});
+
+	jQuery('#close-container').click(function(e) {
+		e.preventDefault();
+		jQuery(container).hide();
+		console.log('Bye!!');
+	});
+
+}
+
+jQuery(window).load(function(){
+	slider();
+	preloader();
+	videoPlayer();
+>>>>>>> e5d25cc901d6a0140a29d9a3eea110a6ae4cb72e
 });
