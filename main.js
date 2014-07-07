@@ -19,9 +19,20 @@ function preloader() {
 	jQuery(shadow).show();
 }
 
+function playerControl() {
+	var iframe = document.getElementById('player'),
+	player = $f(iframe),
+	close = document.getElementById('close-container');
+
+	close.addEventListener('click', function() {
+		player.api('pause');
+	});
+}
+
 jQuery(window).load(function(){
 	slider();
 	preloader();
+	playerControl();
 	(function() {
 	var triggerBttn = document.getElementById('video-link'),
 		overlay = document.querySelector('div.video-container'),
@@ -61,16 +72,16 @@ jQuery(window).load(function(){
 		e.preventDefault();
 		toggleOverlay();
 		jQuery('body').css('overflow','hidden');
-		console.log('Open');
+		console.log('Video Open');
 	});
 
 	jQuery(closeBttn).click(function(e) {
 		e.preventDefault();
 		toggleOverlay();
 		vimeoWrap = jQuery('.video');
-   		vimeoWrap.html( vimeoWrap.html());
+   		//vimeoWrap.html(vimeoWrap.html());
    		jQuery('body').removeAttr('style');
-		console.log('Close');
+   		console.log('Video Closed');
 	});
 
 })();
