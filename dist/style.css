@@ -251,6 +251,7 @@ Basic Swiper Styles
 	font-weight: 700;
 	font-size: 15px;
 	margin-bottom: 0px;
+	letter-spacing: -.3px;
 }
 
 .row p {
@@ -258,6 +259,7 @@ Basic Swiper Styles
 	font-weight: 300;
 	font-size: 13px;
 	margin-top: 1px;
+	word-spacing: -.5px;
 }
 
 .btn {
