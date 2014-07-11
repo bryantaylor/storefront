@@ -266,12 +266,16 @@ Basic Swiper Styles
 	display: inline-block;
 	background: #00b2bf;
 	border: 1px solid #02a8b4;
-	width: 107px;
-	height: 26px;
-	line-height: 22px;
+	width: 130px;
+	height: 34px;
+	line-height: 30px;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 2px;
+}
+
+.push16 {
+	margin-top: 16px;
 }
 
 .readMore {
@@ -287,6 +291,10 @@ Basic Swiper Styles
 	font-weight: 700;
 	color: #fff;
 	text-decoration: none;
+}
+
+.topPush {
+	top: 321px;
 }
 
 .social {
