@@ -71,19 +71,19 @@ Basic Swiper Styles
 ================================================================*/
 .swiper-container {
 	padding: 33px 0 0 0;
-	position:relative;
-	overflow:hidden;
-	-webkit-backface-visibility:hidden;
-	-moz-backface-visibility:hidden;
-	-ms-backface-visibility:hidden;
-	-o-backface-visibility:hidden;
-	backface-visibility:hidden;
+	position: relative;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
 	/* Fix of Webkit flickering */
 	z-index:1;
 }
 .swiper-wrapper {
-	position:relative;
-	width:768px;
+	position: relative;
+	width: 768px;
 	-webkit-transition-property:-webkit-transform, left, top;
 	-webkit-transition-duration:0s;
 	-webkit-transform:translate3d(0px,0,0);
@@ -512,7 +512,7 @@ Pagination Styles
 	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
 	font-feature-settings:"liga","dlig";
 	text-rendering:optimizeLegibility;
-	}
+}
 
 /* Use the following CSS code if you want to have a class per icon */
 [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -523,7 +523,7 @@ Pagination Styles
 	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
 	font-feature-settings:"liga","dlig";
 	text-rendering: optimizeLegibility;
-	}
+}
 
 /* Icons */
 
