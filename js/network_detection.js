@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 			}
 		}
 		
-		//window.onnetworkconnection();
+		window.onnetworkconnection();
 		
 		jQuery.ajax({
 			type: "GET",

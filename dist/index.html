@@ -5,29 +5,33 @@
 	<title>Bates Storefront</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<script src="js/jquery-1.10.1.min.js"></script>
-	<script src="network_detection.js"></script>
-	<link rel="stylesheet" href="offline.css" type="text/css">
+	<script src="js/network_detection.js"></script>
+	<link rel="stylesheet" href="css/offline.css" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/froogaloop.js"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <div id="wrap">
+	
 	<div id="preloader">
 		<div id="logo-container">
 			<img id="logo" src="img/logo.svg" alt="Logo">
 		</div>
 	</div>
+	
 	<div class="video-container overlay-door">
 		<a id="close-container" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.9 14.9" enable-background="new 0 0 14.9 14.9"><path class="theX" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M13.9 1l-12.9 12.9M13.9 13.9l-12.9-12.9"/></svg></a>
 		<div class="video">
-			<iframe id="player" src="//player.vimeo.com/video/91424036?api=1title=0&amp;byline=0&amp;portrait=0&amp;color=00b2bf" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<video id="bates-video" width="768"  height="432" controls preload="auto">
+			<source src="http://batescreativegroup.com/clients/store/video/BatesCreative.mp4" type="video/mp4">
+		</video>
 		</div>
 	</div>
+	<!--
 	<header id="page-header">
 		<p>The Official App of Bates Creative</p>
 	</header>
+	-->
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
@@ -39,7 +43,7 @@
 					<p>In celebration of our agency’s 10th year in business, we took a look back at the history of the design industry and how the past ten years have inspired our team, our work and our love for design.</p>
 				</div>
 				<div class="readMore grey">
-					<p>Download the Bates Creative <br>Imagine App for free today</p>
+					<p>Visit Our Library to Download <br>the Imagine App for free today</p>
 				</div>
 				<div class="social grey">
 					<a href="https://www.facebook.com/batescreativegroup"><span aria-hidden="true" class="icon-facebook"></span></a>
@@ -57,7 +61,7 @@
 					<p>Our team of strategists, designers and industry-thought leaders has an established reputation for excellence and design innovation that helps position and propel clients in their respected markets.</p>
 				</div>
 				<div class="readMore white push">
-					<p><a id="video-link" href="#">Watch our Video</a></p>
+					<a id="video-link" href="#">Watch our Video</a>
 				</div>
 				<div class="socialW">
 					<a href="https://www.facebook.com/batescreativegroup"><span aria-hidden="true" class="icon-facebook"></span></a>
@@ -93,7 +97,7 @@
 	</div>
 	<div class="featuredLinks">
 		<div class="rowWrap clearfix">
-			<div id="shadow"></div>
+			<!-- <div id="shadow"></div> -->
 			<div class="row">
 				<header>Website</header>
 				<img src="img/websiteIcon.png" alt="Bates Website">
@@ -126,7 +130,6 @@
 	</div>
 </div>
 <script src="js/idangerous.swiper.min.js"></script>
-<script src="js/classie.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
