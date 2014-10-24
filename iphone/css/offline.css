@@ -1,0 +1,28 @@
+#offlineBG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 768px;
+	height: 1024px;
+	background-color: #fff; 
+	background: url('img/pattern.png');
+	background-repeat: repeat;
+	background-color: #fff; 
+	z-index: 1000;
+}
+
+#offline {
+	text-align: center;
+	margin-top: 418px;
+}
+
+#offline img {
+	width: 150px;
+}
+
+#offline h1 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #7e7773;
+}
