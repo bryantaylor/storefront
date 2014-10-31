@@ -207,6 +207,18 @@ Basic Swiper Styles
 	line-height: 1;
 }
 
+
+.featureDescription-2 h1 {
+	font-family: 'bebas_neueregular';
+	font-size: 32px;
+	font-weight: 400;
+	color: #7e7773;
+	margin: 0;
+	text-align: left;
+	line-height: .95;
+	text-rendering: optimize-legibility;
+}
+
 .featureDescription p {
 	font-family: 'Open Sans';
 	font-size: normal;
@@ -250,6 +262,14 @@ Basic Swiper Styles
 	text-align: center;
 }
 
+.featureDescription-2 {
+	position: absolute;
+	top: 239px;
+	left: 170px;
+	width: 320px;
+	text-align: center;
+}
+
 .featuredLinks {
 	width: 320px;
 	height: 93px;
@@ -268,7 +288,7 @@ Basic Swiper Styles
 	width: 80px;
 	text-align: center;
 	float: left;
-	border-right: 1px solid #7e7773;
+	border-right: 1px solid RGB(205, 205, 205);
 }
 
 .row-last {
