@@ -20,7 +20,6 @@ function preloader() {
 jQuery(window).load(function(){
 	slider();
 	preloader();
-	
 
 	jQuery(document).on('click', '#video-link', function(e) {
 		e.preventDefault();

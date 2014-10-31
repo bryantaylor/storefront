@@ -166,13 +166,11 @@ Basic Swiper Styles
 }
 
 .swiper-slide-active {
-	/* Specific active slide styling: */
-	
+	/* Specific active slide styling: */	
 }
 
 .swiper-slide-visible {
 	/* Specific visible slide styling: */	
-
 }
 
 .swiper-slide header {
@@ -191,7 +189,7 @@ Basic Swiper Styles
 
 .featureDescription h1 {
 	font-family: 'bebas_neueregular';
-	font-size: 40px;
+	font-size: 34px;
 	font-weight: 400;
 	color: #fff;
 	margin: 0;
@@ -206,7 +204,6 @@ Basic Swiper Styles
 	margin: 0;
 	line-height: 1;
 }
-
 
 .featureDescription-2 h1 {
 	font-family: 'bebas_neueregular';
@@ -246,6 +243,7 @@ Basic Swiper Styles
 	text-decoration: none;
 	margin-top: 15px;
 	padding: 15px 30px;
+	font-size: 12px;
 	background: #00b3be;
 }
 
