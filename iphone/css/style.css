@@ -207,7 +207,7 @@ Basic Swiper Styles
 
 .featureDescription-2 h1 {
 	font-family: 'bebas_neueregular';
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 400;
 	color: #7e7773;
 	margin: 0;
@@ -262,9 +262,8 @@ Basic Swiper Styles
 
 .featureDescription-2 {
 	position: absolute;
-	top: 239px;
+	top: 248px;
 	left: 170px;
-	width: 320px;
 	text-align: center;
 }
 
